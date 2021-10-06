@@ -32,7 +32,7 @@ This assignment has three levels of difficulty, with each contract increasing in
 
 ## Starting your project
 
-Navigate to the [Remix IDE](https://remix.ethereum.org) and create a new contract called `AssociateProfitSplitter.sol` using the starter code for Level One above.
+Navigate to the [Remix IDE](https://remix.ethereum.org) and create a three new contracts. 
 
 While developing and testing your contract, use the [Ganache](https://www.trufflesuite.com/ganache) development chain, and point MetaMask to `localhost:8545`, or replace the port with what you have set in your workspace.
 
@@ -41,7 +41,7 @@ While developing and testing your contract, use the [Ganache](https://www.truffl
 ![Ganache](Images/ganache1.png)
 
 
-## Level One: The `AssociateProfitSplitter` Contract
+## Level One: The `associate-profit-splitter` Contract
 
 ### This contracts divides the ether evenly among the associated contracts. 
 
@@ -63,7 +63,7 @@ While developing and testing your contract, use the [Ganache](https://www.truffl
 
 ![Ganache](Images/deploya4.png)
 
-## Level Two: The `TieredProfitSplitter` Contract
+## Level Two: The `tiered-profit-splitter` Contract
 
 In this contract, rather than splitting the profits between associate-level employees, rudimentary percentages for different tiers of employees (CEO, CTO, and Bob) has been set to distribute accordingly.
 
@@ -90,7 +90,7 @@ For Bob (employee_three), distribute points * 15.
 ## Confirm the balance of each account
 ![Ganache](Images/tieredprofitsplitter2.png)
 
-## Level Three: The `DeferredEquityPlan` Contract
+## Level Three: The `deferred-equity-plan` Contract
 
 In this contract, we will be managing an employee's "deferred equity incentive plan," in which 1000 shares will be distributed over four years to the employee. We won't need to work with ether in this contract, but we will be storing and setting amounts that represent the number of distributed shares the employee owns, and enforcing the vetting periods automatically.
 
