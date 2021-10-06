@@ -24,12 +24,26 @@ contract TieredProfitSplitter {
 
         // @TODO: Calculate and transfer the distribution percentage
         // Step 1: Set amount to equal `points` * the number of percentage points for this employee
+        amount = points * 60;
+        
         // Step 2: Add the `amount` to `total` to keep a running total
+        total += amount;
+        
         // Step 3: Transfer the `amount` to the employee
-
-        // @TODO: Repeat the previous steps for `employee_two` and `employee_three`
-        // Your code here!
-
+        employee_one.transfer(amount);
+        
+        
+        // @TODO: Repeat the previous steps for 
+        // `employee_two`
+        amount = points * 25;
+        total += amount; 
+        employee_two.transfer(amount);
+        
+        //`employee_three`
+        amount = points * 15;
+        total += amount;
+        employee_three.transfer(amount);
+        
         employee_one.transfer(msg.value - total); // ceo gets the remaining wei
     }
 
@@ -37,3 +51,8 @@ contract TieredProfitSplitter {
         deposit();
     }
 }
+
+// wallet address: 0x8aD5b4E4165647E4666587D8f4b66f268F46F772
+// employee_one address: "0x5fd36bCFD82AaB6B752C1263b3AeFedE65F1e0a5"
+// employee_two address: "0x4E5CF0733134f572cDd6e9B70cAE6C17AD48F7B4"
+// employee_three address: "0xAd4FF43d7C9271Fc0f8D432069320204d04D731c"
