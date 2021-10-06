@@ -1,4 +1,4 @@
-# Unit 20 - "Looks like we've made our first contract!"
+# Unit 20 - "Looks like we've made our first contract!" by John Mangahas
 
 ## Background
 
